@@ -1,0 +1,59 @@
+body {
+	max-width: 800px;
+	margin: auto;
+	padding: 0.5em;
+	& > div {
+		position: relative;
+	}
+}
+
+body, input, textarea {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+input, textarea, select {
+	font-size: 1em;
+}
+
+h1 > input {
+	font-size: 0.6em;
+	width: 20em;
+}
+
+table { width: 100%; }
+
+table.input td {
+	&:first-child {
+		width: 11em;
+	}
+	input {
+		width: 100%;
+	}
+}
+
+caption {
+	font-size: 1.5em;
+	color: #2482C5;
+	padding-bottom: 0.5em;
+}
+
+.log {
+	background: #EEEEEE;
+	margin: 0 0 2em 0;
+	padding: 0.1em;
+	.time, .length, .occupation {
+		color: rgba(0,0,0,0.5);
+	}
+	.time, .length {
+		text-align: right;
+	}
+	.time { width: 4em; }
+	.length { width: 3.5em; }
+	.trigger { padding: 0 0.5em; }
+}
+
+@for $i from 0 to 20 {
+	@media (min-width: #{$i * 40}px) {
+		body { font-size: #{$i}px; }
+	}
+}

@@ -1,0 +1,44 @@
+<html ng-app="logApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Procrastination Log</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.8/angular-route.min.js"></script>
+	<script src="controller.js"></script>
+	<link type="text/css" rel="Stylesheet" href="style.css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css' />
+  </head>
+  <body ng-controller="LogCtrl">
+	<table class="input">
+		<caption>Record a time I procrastinated</caption>
+		<tr>
+			<td>How long (in minutes)?</td>
+			<td><input type="number" ng-model="length"></input></td>
+		</tr>
+		<tr>
+			<td>Why?</td>
+			<td><input type="text" ng-model="trigger"></input></td>
+		</td>
+		<tr>
+			<td>What'd ya do?</td>
+			<td><input type="text" ng-model="occupation"></input></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button ng-click="addEvent()">Submit</button></td>
+		</tr>
+	</table>
+	<h1>Times I've procrastinated</h1>
+	<table class="log" ng-repeat="day in days.slice().reverse()">
+		<caption>{{day.date}}</caption>
+		<tbody>
+			<tr ng-repeat="event in day.events.slice().reverse()">
+				<td class="time">{{event.time}}</td>
+				<td class="length">{{event.length}} mins</td>
+				<td class="trigger">{{event.trigger}}</td>
+				<td class="occupation">{{event.occupation}}</td>
+			</tr>
+		</tbody>
+	</table>
+  </body>
+</html>

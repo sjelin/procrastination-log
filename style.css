@@ -1,0 +1,105 @@
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 0.5em; }
+  body > div {
+    position: relative; }
+
+body, input, textarea {
+  font-family: 'Source Sans Pro', sans-serif; }
+
+input, textarea, select {
+  font-size: 1em; }
+
+h1 > input {
+  font-size: 0.6em;
+  width: 20em; }
+
+table {
+  width: 100%; }
+
+table.input td:first-child {
+  width: 11em; }
+table.input td input {
+  width: 100%; }
+
+caption {
+  font-size: 1.5em;
+  color: #2482C5;
+  padding-bottom: 0.5em; }
+
+.log {
+  background: #EEEEEE;
+  margin: 0 0 2em 0;
+  padding: 0.1em; }
+  .log .time, .log .length, .log .occupation {
+    color: rgba(0, 0, 0, 0.5); }
+  .log .time, .log .length {
+    text-align: right; }
+  .log .time {
+    width: 4em; }
+  .log .length {
+    width: 3.5em; }
+  .log .trigger {
+    padding: 0 0.5em; }
+
+@media (min-width: 0px) {
+  body {
+    font-size: 0px; } }
+@media (min-width: 40px) {
+  body {
+    font-size: 1px; } }
+@media (min-width: 80px) {
+  body {
+    font-size: 2px; } }
+@media (min-width: 120px) {
+  body {
+    font-size: 3px; } }
+@media (min-width: 160px) {
+  body {
+    font-size: 4px; } }
+@media (min-width: 200px) {
+  body {
+    font-size: 5px; } }
+@media (min-width: 240px) {
+  body {
+    font-size: 6px; } }
+@media (min-width: 280px) {
+  body {
+    font-size: 7px; } }
+@media (min-width: 320px) {
+  body {
+    font-size: 8px; } }
+@media (min-width: 360px) {
+  body {
+    font-size: 9px; } }
+@media (min-width: 400px) {
+  body {
+    font-size: 10px; } }
+@media (min-width: 440px) {
+  body {
+    font-size: 11px; } }
+@media (min-width: 480px) {
+  body {
+    font-size: 12px; } }
+@media (min-width: 520px) {
+  body {
+    font-size: 13px; } }
+@media (min-width: 560px) {
+  body {
+    font-size: 14px; } }
+@media (min-width: 600px) {
+  body {
+    font-size: 15px; } }
+@media (min-width: 640px) {
+  body {
+    font-size: 16px; } }
+@media (min-width: 680px) {
+  body {
+    font-size: 17px; } }
+@media (min-width: 720px) {
+  body {
+    font-size: 18px; } }
+@media (min-width: 760px) {
+  body {
+    font-size: 19px; } }
